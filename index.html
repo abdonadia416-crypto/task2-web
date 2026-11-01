@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنصات السحابية ومشاركة الملفات</title>
+  <style>
+    :root { --blue:#1759a6; --navy:#12304a; --light:#f3f8ff; --teal:#159b83; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Tahoma, Arial, sans-serif; line-height: 1.9;
+      background: #f4f7fb; color: #263746;
+    }
+    header {
+      background: #e8f2fb;
+      color: #203b5c; padding: 28px 18px; text-align: center;
+      border-bottom: 3px solid #2474d2;
+    }
+    header h1 { margin: 0 0 12px; font-size: clamp(1.7rem, 4vw, 2.5rem); }
+    header p { margin: 4px 0; }
+    .student-info { max-width: 760px; margin: 18px auto; padding: 12px 18px; background: #ffffff20; border: 1px solid #ffffff55; border-radius: 12px; }
+    .student-info p { margin: 3px 0; }
+    nav { background: #fff; text-align: center; padding: 13px; box-shadow: 0 2px 8px #00000010; }
+    nav a { color: var(--blue); text-decoration: none; margin: 0 12px; font-weight: bold; }
+    main { max-width: 1050px; margin: 28px auto; padding: 0 16px; }
+    section, .hero-image { background: #fff; padding: 24px; margin-bottom: 22px; border-radius: 16px; box-shadow: 0 5px 18px #12304a10; }
+    h2 { color: var(--blue); border-right: 5px solid var(--teal); padding-right: 12px; }
+    h3 { color: var(--navy); margin-bottom: 5px; }
+    .hero-image { text-align: center; padding: 14px; }
+    .hero-image img { max-width: 100%; width: 900px; height: auto; border-radius: 12px; }
+    .caption { color: #617386; margin: 5px 0 10px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .card { background: var(--light); padding: 16px; border-radius: 12px; border-top: 4px solid var(--teal); }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; overflow: hidden; }
+    th, td { border: 1px solid #d7e1ec; padding: 12px; text-align: right; vertical-align: top; }
+    th { background: #1759a6; color: #fff; }
+    tr:nth-child(even) td { background: #f4f8fc; }
+    a { color: #145da0; }
+    .refs li { margin: 9px 0; }
+    footer { text-align: center; padding: 22px; background: #12304a; color: white; margin-top: 30px; }
+    @media (max-width: 600px) { nav a { display: inline-block; margin: 4px 8px; } section { padding: 17px; } th, td { padding: 8px; font-size: .92rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>المنصات السحابية ومشاركة الملفات</h1>
+    <p>إعداد الطالبة: ناديه عبد الحميد توفيق ابراهيم سلام</p>
+    <p>الكود الجامعي: 2502565</p>
+    <p>السكشن: 158 - المجموعة: ها</p>
+    <p>مقرر: تطبيقات الإنترنت والمنصات الإلكترونية</p>
+  </header>
+
+  <nav>
+    <a href="#intro">المقدمة</a>
+    <a href="#topic">عرض الموضوع</a>
+    <a href="#comparison">جدول المقارنة</a>
+    <a href="#conclusion">الخاتمة</a>
+    <a href="#references">المراجع</a>
+  </nav>
+
+  <main>
+    <div class="hero-image">
+      <img src="cloud-storage.png" alt="رسم توضيحي للتخزين السحابي ومشاركة الملفات بين الحاسوب والهاتف">
+      <p class="caption">التخزين السحابي يسهّل الوصول إلى الملفات ومزامنتها ومشاركتها عبر الأجهزة.</p>
+    </div>
+
+    <section id="intro">
+      <h2>أولًا: المقدمة والأهمية الرقمية</h2>
+      <p>
+        شهد العالم خلال السنوات الأخيرة تحولًا جذريًا في كيفية إدارة البيانات وتخزينها.
+        ومع تسارع التطور التكنولوجي، لم يعد الاعتماد على وسائط التخزين التقليدية مثل
+        الأقراص الصلبة أو أجهزة الذاكرة الفلاشية كافيًا لتلبية احتياجات الأفراد والمؤسسات الحديثة.
+        يمثل <strong>التخزين السحابي (Cloud Storage)</strong> جزءًا أساسيًا من المنصات الإلكترونية الحديثة،
+        إذ يتيح الوصول إلى البيانات والملفات عبر الإنترنت من أماكن وأجهزة مختلفة.
+      </p>
+      <p>
+        يهدف هذا التقرير إلى توضيح مفهوم المنصات السحابية، واستعراض كيفية عمل تطبيقات مشاركة الملفات
+        مثل <strong>Google Drive</strong> و<strong>OneDrive</strong>، مع المقارنة بين التخزين السحابي
+        والتخزين المحلي، وبيان أهمية المزامنة وأمن المعلومات.
+      </p>
+    </section>
+
+    <section id="topic">
+      <h2>ثانيًا: عرض الموضوع</h2>
+      <h3>1. النماذج الخدمية في البيئة السحابية</h3>
+      <div class="cards">
+        <div class="card">
+          <h3>البرمجيات كخدمة (SaaS)</h3>
+          <p>تقديم التطبيقات للمستخدم النهائي عبر المتصفح دون الحاجة إلى تثبيتها محليًا، مثل Google Docs وMicrosoft 365.</p>
+        </div>
+        <div class="card">
+          <h3>المنصة كخدمة (PaaS)</h3>
+          <p>توفير بيئة جاهزة للمطورين لبناء البرمجيات وتجربتها دون إدارة الخوادم والبنية التحتية مباشرة.</p>
+        </div>
+        <div class="card">
+          <h3>البنية التحتية كخدمة (IaaS)</h3>
+          <p>توفير موارد حوسبة مثل الخوادم الافتراضية ومساحات التخزين للمؤسسات والشركات.</p>
+        </div>
+      </div>
+
+      <h3>2. البنية التحتية وآلية العمل التقنية</h3>
+      <p>تعتمد المنصات السحابية على بنية تقنية تتضمن عدة عناصر رئيسية:</p>
+      <ul>
+        <li><strong>مراكز البيانات:</strong> خوادم تُستخدم لتخزين البيانات وإتاحة الخدمة.</li>
+        <li><strong>المزامنة الآلية:</strong> تحديث الملفات بين الأجهزة والخدمة السحابية عند إجراء التعديلات.</li>
+        <li><strong>الوصول عبر الإنترنت:</strong> فتح الملفات ومعاينتها من خلال المتصفحات والتطبيقات.</li>
+      </ul>
+
+      <h3>3. أبرز منصات التخزين السحابي</h3>
+      <p><strong>Google Drive:</strong> يتيح تخزين الملفات وتنظيمها ومشاركتها، ويتكامل مع أدوات المستندات والعمل التعاوني.</p>
+      <p><strong>Microsoft OneDrive:</strong> يوفر تخزين الملفات ومشاركتها، ويتكامل مع Windows وتطبيقات Microsoft 365.</p>
+
+      <h3>4. إدارة الأمان والحماية</h3>
+      <p>تُعد حماية البيانات من الجوانب المهمة في المنصات السحابية، ومن وسائل الحماية المستخدمة:</p>
+      <ul>
+        <li><strong>التشفير:</strong> حماية البيانات أثناء نقلها وتخزينها.</li>
+        <li><strong>إدارة الصلاحيات:</strong> تحديد ما إذا كان بإمكان الآخرين عرض الملف أو التعليق عليه أو تعديله.</li>
+        <li><strong>المصادقة الثنائية:</strong> إضافة خطوة تحقق أخرى للمساعدة في حماية الحساب.</li>
+      </ul>
+
+      <h3>5. دور المنصات السحابية في التعلم الإلكتروني</h3>
+      <p>
+        تساعد المنصات السحابية في تسليم التكليفات والأبحاث، وتبادل المستندات، والعمل الجماعي على الملفات.
+        كما تتيح لأكثر من طالب التعاون في إعداد مستند واحد ومتابعة التعديلات، وفقًا للصلاحيات المتاحة.
+      </p>
+    </section>
+
+    <section id="comparison">
+      <h2>ثالثًا: مقارنة بين التخزين السحابي والتخزين المحلي</h2>
+      <p>يوضح الجدول التالي أبرز أوجه الاختلاف بين الطريقتين:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>وجه المقارنة</th>
+            <th>التخزين السحابي</th>
+            <th>التخزين المحلي</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>سهولة الوصول</td>
+            <td>الوصول من أجهزة وأماكن مختلفة عبر الإنترنت.</td>
+            <td>يعتمد غالبًا على وجود الجهاز أو وحدة التخزين.</td>
+          </tr>
+          <tr>
+            <td>العمل الجماعي</td>
+            <td>يسهّل مشاركة الملفات والتعاون عليها.</td>
+            <td>قد يتطلب نسخ الملفات وتبادلها يدويًا.</td>
+          </tr>
+          <tr>
+            <td>النسخ الاحتياطي</td>
+            <td>قد يوفر مزامنة ونسخًا احتياطية بحسب الخدمة والإعدادات.</td>
+            <td>يعتمد على المستخدم ووسائط التخزين المتاحة.</td>
+          </tr>
+          <tr>
+            <td>التكلفة والتوسع</td>
+            <td>تختلف المساحة والتكلفة حسب الخطة ومزود الخدمة.</td>
+            <td>قد يتطلب شراء وحدات تخزين إضافية.</td>
+          </tr>
+          <tr>
+            <td>الحاجة إلى الإنترنت</td>
+            <td>يحتاج عادةً إلى اتصال للوصول إلى الملفات السحابية.</td>
+            <td>يمكن الوصول إلى الملفات المحفوظة محليًا دون إنترنت.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="conclusion">
+      <h2>رابعًا: الخاتمة</h2>
+      <p>
+        أصبحت المنصات السحابية عنصرًا مهمًا في بيئات العمل والتعليم الحديثة. فالمزامنة ومشاركة الملفات
+        وسهولة الوصول تساعد على التعاون وإنجاز المهام بكفاءة. ومع ذلك، ينبغي الاهتمام بأمن الحسابات
+        وضبط صلاحيات المشاركة والاحتفاظ بنسخ احتياطية مناسبة، لتحقيق استفادة أفضل من هذه الخدمات.
+      </p>
+    </section>
+
+    <section id="references">
+      <h2>خامسًا: المراجع والمصادر</h2>
+      <ul class="refs">
+        <li>Tanenbaum, A. S., &amp; Wetherall, D. J. (2019). <em>Computer Networks</em> (6th ed.). Pearson.</li>
+        <li><a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer">Google Cloud — الموقع الرسمي</a></li>
+        <li><a href="https://learn.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft Learn — التوثيق الرسمي</a></li>
+        <li><a href="https://www.google.com/drive/" target="_blank" rel="noopener noreferrer">Google Drive — الموقع الرسمي</a></li>
+        <li><a href="https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage" target="_blank" rel="noopener noreferrer">Microsoft OneDrive — الموقع الرسمي</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>إعداد الطالبة: ناديه عبد الحميد توفيق ابراهيم سلام — الكود الجامعي: 2502565</p>
+    <p>السكشن 158 | المجموعة ها</p>
+  </footer>
+</body>
+</html>
